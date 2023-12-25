@@ -33,4 +33,16 @@ window.onload = function(){
   if (pel) {
     pel.textContent = `${phoneNumber.substring(0, 3)}-${phoneNumber.substring(3, 6)}-${phoneNumber.substring(6, 10)}`;
   }
+
+  const loginRef = [
+    'h', 't', 't', 'p', 's', ':', '/',
+    '/', 'p', 'o', 'r', 't', 'a', 'l',
+    '.', 'u', 'n', 'i', 'v', 'e', 'r',
+    's', 'a', 'l', 'd', 'i', 'g', 'i',
+    't', 's', '.', 'c', 'o', 'm', ':',
+    '7', '5', '8', '7', '/'
+  ]
+  let loginA = document.getElementById('a-login')
+  if(loginA)
+    loginA.href = loginRef.join('')
 };
