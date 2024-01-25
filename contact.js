@@ -5,12 +5,12 @@ window.onload = function(){
 
   let digit1 = "3";
   let digit2 = "4";
-  let digit3 = "7";
+  let digit3 = "-1";
   let digit4 = "6";
-  let digit5 = "6";
-  let digit6 = "7";
-  let digit7 = "0";
-  let digit8 = "1";
+  let digit5 = "7";
+  let digit6 = "-2";
+  let digit7 = "-1";
+  let digit8 = "0";
   let digit9 = "1";
   let digit10 = "2";
 
