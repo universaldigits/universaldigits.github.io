@@ -24,9 +24,14 @@ window.onload = function(){
   }
 
 
-  let el = document.getElementById('heml')
-  if(el) {
-    el.innerHTML = '<a href="' + 'ma' + 'il' + 'to:' + user + '@' + domain + '.' + element + '">' + user + '@' + domain + '.' + element + '</a>';
+  let els = document.getElementsByClassName('heml')
+  for (let el of els) {
+    let href= 'ma' + 'il' + 'to:' + user + '@' + domain + '.' + element;
+    if (el.tagName !== 'A') {
+      el.innerHTML = `<a href="${href}">` + user + '@' + domain + '.' + element + '</a>';
+    } else {
+      el.href = href;
+    }
   }
 
   let pel = document.getElementById('phone')
